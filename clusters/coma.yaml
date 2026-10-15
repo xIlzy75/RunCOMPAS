@@ -25,7 +25,7 @@ extra_sbatch: []
 # Paths
 # ---------------------------------------------------------------------
 # Where COMPAS is installed (must contain src/COMPAS)
-compas_root: "/vol/astro8/lvanson/lvanson/Programs/COMPAS"
+compas_root: "/home/ideroo/COMPAS/"
 
 # --- storage on coma is two-tier: read this before changing it ---------------
 #
@@ -45,8 +45,8 @@ compas_root: "/vol/astro8/lvanson/lvanson/Programs/COMPAS"
 #
 # $HOME is the only shared filesystem the compute nodes can write. It is ~25 GB,
 # so archive between runs. CHANGE BOTH PATHS TO YOUR OWN.
-output_root:  "/home/lvanson/CompasOutput"
-archive_root: "/vol/astro8/lvanson/lvanson/CompasOutput"
+output_root:  "/home/ideroo/COMPAS_data"
+archive_root: "/vol/astro8/lvanson/ideroo/COMPAS_data"
 
 # Node-local disk for simulation I/O. coma explicitly asks jobs to use this:
 # the /vol NFS volumes have high latency and cope badly with many concurrent
@@ -70,7 +70,7 @@ stroopwafel_path: "/vol/astro8/lvanson/lvanson/Programs/stroopwafel"
 #
 # The system python3 happens to have most of what is needed, but relying on
 # it means your jobs break silently whenever the machine is upgraded.
-venv: "/home/lvanson/venvs/runcompas_venv"
+venv: "/home/ideroo/venvs/runcompas_venv/"
 python: "python"
 
 # ---------------------------------------------------------------------

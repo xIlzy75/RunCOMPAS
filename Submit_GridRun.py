@@ -50,9 +50,9 @@ REPO = os.path.dirname(os.path.abspath(__file__))
 # ===========================================================================
 
 # --- what to call this run, and where it goes ------------------------------
-RUN_NAME = "N1e6_PPISN_HENDRIKS"
+RUN_NAME = "N200_test_run"
 # Leave as None to use output_root from your cluster profile.
-OUTPUT_ROOT = "/home/lvanson/CompasOutput"
+OUTPUT_ROOT = None
 
 # --- optional extra directory level ----------------------------------------
 # Runs land in  <output_root>/<RUN_SUBDIR>/<RUN_NAME>.
@@ -68,8 +68,8 @@ RUN_SUBDIR = "auto"
 CLUSTER = 'coma'
 
 # --- how big is the run, and how is it chopped up? -------------------------
-N_BINARIES = int(1e7)     # total systems to evolve
-N_BATCHES = 200           # = number of slurm array tasks
+N_BINARIES = int(200)     # total systems to evolve
+N_BATCHES = 4           # = number of slurm array tasks
 MAX_CONCURRENT = 40       # cap on tasks running at once (be kind to the queue)
 SEED_BASE = 0             # COMPAS random seed of the very first system
 
@@ -89,16 +89,16 @@ GRID_FILE = None
 # --- resources per array task ----------------------------------------------
 # One task evolves N_BINARIES/N_BATCHES systems. Time it on a small run first:
 # submit with N_BINARIES=1000, N_BATCHES=1 and look at the log.
-MAINRUN_WALLTIME = "0-04:30:00"
-MAINRUN_MEMORY = "16G"
+MAINRUN_WALLTIME = "0-00:30:00"
+MAINRUN_MEMORY = "4G"
 
 # --- which stages to submit -------------------------------------------------
 RUN_MAINRUN = True
 RUN_POSTPROCESSING = True
 RUN_COSMIC_INTEGRATION = False
 
-PP_WALLTIME = "0-03:00:00"
-PP_MEMORY = "16G"
+PP_WALLTIME = "0-00:30:00"
+PP_MEMORY = "2G"
 
 CI_WALLTIME = "0-02:00:00"
 CI_MEMORY = "16G"
