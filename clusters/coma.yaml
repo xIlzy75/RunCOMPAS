@@ -15,8 +15,8 @@ hostname_match: ["coma"]
 partition: "normal"          # coma has: normal (2 day), highmem, backfill (no limit)
 max_walltime: "2-00:00:00"   # hard limit of the `normal` partition
 account: null                # coma does not use accounts; set e.g. "myproject" elsewhere
-mail_type: "FAIL"            # FAIL | ALL | NONE
-mail_user: "lieke_van_son@hotmail.com"
+mail_type: "ALL"            # FAIL | ALL | NONE
+mail_user: "ilse.deroo@ru.nl"
 
 # Extra raw #SBATCH lines, if you need them (one per list entry, no "#SBATCH" prefix)
 extra_sbatch: []
