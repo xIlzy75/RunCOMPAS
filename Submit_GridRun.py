@@ -93,8 +93,8 @@ MAINRUN_WALLTIME = "0-08:00:00"
 MAINRUN_MEMORY = "4G"
 
 # --- which stages to submit -------------------------------------------------
-RUN_MAINRUN = False
-RUN_POSTPROCESSING = False
+RUN_MAINRUN = True
+RUN_POSTPROCESSING = True
 RUN_COSMIC_INTEGRATION = True
 
 PP_WALLTIME = "0-03:00:00"
