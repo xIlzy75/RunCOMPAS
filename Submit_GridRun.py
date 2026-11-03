@@ -50,7 +50,7 @@ REPO = os.path.dirname(os.path.abspath(__file__))
 # ===========================================================================
 
 # --- what to call this run, and where it goes ------------------------------
-RUN_NAME = "N1e6_grid_test_run"
+RUN_NAME = "N1e6_PPISN_HENDRIKS_M15"
 # Leave as None to use output_root from your cluster profile.
 OUTPUT_ROOT = None
 
@@ -70,7 +70,7 @@ CLUSTER = 'coma'
 # --- how big is the run, and how is it chopped up? -------------------------
 N_BINARIES = int(1e6)     # total systems to evolve
 N_BATCHES = 100           # = number of slurm array tasks
-MAX_CONCURRENT = 40       # cap on tasks running at once (be kind to the queue)
+MAX_CONCURRENT = 20       # cap on tasks running at once (be kind to the queue)
 SEED_BASE = 0             # COMPAS random seed of the very first system
 
 # --- optional grid file ----------------------------------------------------
