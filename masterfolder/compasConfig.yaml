@@ -101,8 +101,8 @@ numericalChoices:
 #    --initial-mass-function-power: 0.000000                               # Default: 0.000000
 #    --luminosity-to-mass-threshold: 4.200000                              # Default: 4.200000
 #    --metallicity: 0.014200                                               # Default: 0.014200                                                                                                                                                                         # metallicity for both SSE and BSE - Solar metallicity Asplund+2010
-#    --metallicity-min: 0.000100                                           # Default: 0.000100
-#    --metallicity-max: 0.030000                                           # Default: 0.030000
+     --metallicity-min: 0.000100                                           # Default: 0.000100
+     --metallicity-max: 0.030000                                           # Default: 0.030000
 #    --luminous-blue-variable-multiplier: 1.500000                         # Default: 1.500000
 #    --overall-wind-mass-loss-multiplier: 1.000000                         # Default: 1.000000
 #    --random-seed: 0                                                      # Default: 0
@@ -250,7 +250,7 @@ stringChoices:
 #    --RSG-mass-loss-prescription: 'DECIN2023'                             # Default: 'DECIN2023'                   # Options: ['NJ90','KEE2021','YANG2023','DECIN2023','BEASOR2020','VINKSABHAHIT2023','ZERO']
 #    --VMS-mass-loss-prescription: 'SABHAHIT2023'                          # Default: 'SABHAHIT2023'                # Options: ['SABHAHIT2023','BESTENLEHNER2020','VINK2011','ZERO']
 #    --WR-mass-loss-prescription: 'SANDERVINK2023'                         # Default: 'SANDERVINK2023'              # Options: ['SHENAR2019','SANDERVINK2023','BELCZYNSKI2010','ZERO']
-#    --metallicity-distribution: 'ZSOLAR'                                  # Default: 'ZSOLAR'                      # Options: ['LOGUNIFORM','ZSOLAR']
+     --metallicity-distribution: 'LOGUNIFORM'                                  # Default: 'ZSOLAR'                      # Options: ['LOGUNIFORM','ZSOLAR']
      --pulsational-pair-instability-prescription: 'HENDRIKS'               # Default: 'MARCHANT'                    # Options: ['COMPAS','HENDRIKS','FARMER','MARCHANT','STARTRACK','WOOSLEY']
 
     ### BINARY PROPERTIES
