@@ -50,7 +50,7 @@ REPO = os.path.dirname(os.path.abspath(__file__))
 # ===========================================================================
 
 # --- what to call this run, and where it goes ------------------------------
-RUN_NAME = "N1e6_PPISN_HENDRIKS_M10"
+RUN_NAME = "N1e6_PPISN_HENDRIKS_M15"
 # Leave as None to use output_root from your cluster profile.
 OUTPUT_ROOT = None
 
